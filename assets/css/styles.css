@@ -89,7 +89,7 @@ a:hover {
     height: 1.5em;
     width: 8px;
     background: url('../img/button-arrow-right.svg') no-repeat center right;
-    background-size: 15px auto;
+    background-size: 1rem auto;
     opacity: .6;
     vertical-align: middle;
     transition: all .2s;
@@ -102,7 +102,7 @@ a:hover {
 }
 .button:hover:after {
     opacity: 1;
-    width: 15px;
+    width: 1rem;
     transform: translateX(8px);
 }
 
