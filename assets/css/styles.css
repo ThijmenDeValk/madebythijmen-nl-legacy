@@ -1,10 +1,12 @@
 /*  Made by Thijmen, v0.1
  *  This stylesheet follows the BEM naming methodology (http://getbem.com)
+ *
+ *  Base size (1rem): 16px
+ *  All margins, paddings, etc. based on 16px (e.g: 2, 4, 8, 16, 32...)
  */
 
 /*
  *  GENERAL STYLES
- *  Base size (1rem): 16px
  */
 
 html {
@@ -32,8 +34,9 @@ body {
  *  Scale: 1.25 (Major Third)
  */
 h1 {
-    font-size: 1.953em;
+    font-size: 2.441em;
     line-height: 1.12;
+    margin: 0;
 }
 h2 {
     font-size: 1.563rem;
@@ -50,21 +53,30 @@ h3 small, h4 small {
     opacity: .6;
 }
 
+p {
+    max-width: 600px;
+}
+
 @media only screen and (max-width: 600px) {
     h3 small, h4 small {
         display: block;
     }
 }
+@media only screen and (min-width: 601px) {
+    h1 {
+        font-size: 3.052rem;
+    }
+}
 
 a {
     color: #fff;
-    text-decoration-color: rgba(255,255,255,.25);
+    text-decoration-color: rgba(255,255,255,.6);
     text-decoration-thickness: .125rem;
     text-underline-offset: .2rem;
     transition: text-decoration-color .2s;
 }
 a:hover {
-    text-decoration-color: rgba(255,255,255,.6);
+    text-decoration-color: #fff;
 }
 
 /*
@@ -103,16 +115,16 @@ a:hover {
     display: inline-block;
     content: "";
     height: 1.5em;
-    width: 1rem;
+    width: 1em;
     background: url('../img/button-arrow-right.svg') no-repeat;
-    background-position: right .5rem center;
-    background-size: 1rem auto;
+    background-position: right .5em center;
+    background-size: 1em auto;
     opacity: .6;
     vertical-align: middle;
     transition: opacity .2s, background-position .2s;
     position: absolute;
     bottom: 0;
-    right: -.5rem;
+    right: -.5em;
 }
 .button:hover {
     color: #fff;
@@ -123,6 +135,13 @@ a:hover {
     transition-delay: 0s, .2s;
 }
 
+.button--large {
+    font-size: 1.25rem;
+}
+.button--space-above {
+    margin-top: 1rem;
+}
+
 /*
  *  TIME
  */
@@ -131,6 +150,28 @@ a:hover {
     text-transform: uppercase;
     font-size: .8rem;
     opacity: .6;
+}
+
+/*
+ *  TAGS
+ */
+.tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0; /* Hide space in between items */
+}
+.tags li {
+    display: inline-block;
+    font-size: .64rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border: 1px solid rgba(255,255,255,.6);
+    border-radius: 4px;
+    color: rgba(255,255,255,.6);
+    padding: .25rem .1rem .25rem .3rem; /* Compensate for letter-spacing on the right */
+    line-height: 1;
+    margin: 0 .25rem .25rem 0;
 }
 
 /*
@@ -151,12 +192,19 @@ a:hover {
 }
 
 .section--home h1 {
-    font-size: 3.052rem;
-    margin: 0;
     color: rgba(255,255,255,.6);
 }
 .section--home h1 b {
     color: #fff;
+}
+
+.section--404 h2 {
+    color: rgba(255,255,255,.6);
+    margin-top: 0;
+}
+
+.section--work h1 {
+    margin: 0 0 2rem;
 }
 
 @media only screen and (min-width: 601px) {
@@ -226,10 +274,70 @@ a:hover {
 }
 
 /*
+ *  WORK
+ */
+
+.work {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background: #111;
+    position: relative;
+}
+.work h2, .work h3 {
+    margin: 0 100px;
+}
+.work h2 {
+    font-size: 2.441em;
+}
+.work h3 {
+    font-weight: 400;
+}
+.work img {
+    height: 15rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.work--dark {
+    color: #000;
+}
+.work--right {
+    text-align: right;
+}
+.work--right img {
+    left: 0;
+    right: auto;
+}
+
+.work--colour-1 {
+    background: #ffeb00;
+}
+.work--colour-2 {
+    background: #ff1874;
+}
+.work--colour-3 {
+    background: #B4B5DF;
+}
+.work--colour-4 {
+    background: #562B9B;
+}
+
+/*
  *  UTILITIES
  */
 
 /* Get the special 'j' for my name. I'm vain, I know. */
 .util__name {
     font-feature-settings: "salt";
+}
+
+/* Hide on mobile */
+@media only screen and (max-width: 600px) {
+    .util__hide-small {
+        display: none;
+    }
 }
