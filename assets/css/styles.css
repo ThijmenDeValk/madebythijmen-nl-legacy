@@ -227,6 +227,7 @@ a:hover {
 .section--project h2 {
     font-weight: 400;
     margin: 0 0 1rem;
+    color: rgba(255,255,255,.6);
 }
 .section--project img {
     height: 100%;
@@ -407,9 +408,14 @@ a:hover {
         height: 15rem;
     }
 }
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 968px) {
     .work img {
         opacity: .25;
+    }
+    .work {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding: 0 1rem;
     }
 }
 
