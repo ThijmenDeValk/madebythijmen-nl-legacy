@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Made by Thijmen</title>
+        <title>About me - Made by Thijmen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="https://use.typekit.net/uya6imn.css">
     </head>
     <body>
-        <header class="top">
-            <h1 class="top__logo"><a href="index.html">Made by <span class="util__name">Thijmen</span></a></h1>
-            <nav class="top__menu">
+        <!-- Top bar -->
+        <header class="menu">
+            <h1 class="menu__logo"><a href="index.html">Made by <span class="util__name">Thijmen</span></a></h1>
+            <nav class="menu__menu">
                 <ul>
                     <li><a href="about.html">About me</a></li>
                 </ul>
             </nav>
         </header>
+
+        <!-- Main content -->
         <main>
-            <header class="section section--header">
-                <h1><span class="util__name">Thijmen</span> de Valk</h1>
+            <!-- Basic stuff about me-->
+            <header class="section section--header about-me">
+                <div class="about-me__text">
+                    <h1><span class="util__name">Thijmen</span> de Valk</h1>
+                    <p><b>Hi there! I'm a Dutch product designer.</b></p>
+                    <p>I love designing products that blend the digital and physical world, and I will admit I like my creations to be seen and used by people.</p>
+                    <p>I started coding when I was 8, and ever since I was 14 I wanted to be a filmmaker. Then I tried my hand at some marketing and even (oh snap) acting. For some reason (that is way too long to explain here), that perfectly leveled out in product design. And the rest is history, as they say.</p>
+                    <p>Currently, I'm studying at THUAS in The Hague. I'm also still freelancing, because... well, because I am.</p>
+                </div>
+                <figure class="photos__item about-me__photo">
+                    <img src="assets/img/about/me.jpg">
+                </figure>
             </header>
+
+            <!-- Let's take a break and look at pretty stuff -->
+            <section class="section section--photos">
+                <h2 class="heading--secondary">Things you (do not) need to know about me</h2>
+                <div class="photos">
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-chocolate.jpg">
+                        <figcaption>I love chocolate. Maybe a bit too much?</figcaption>
+                    </figure>
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-colours.jpg">
+                        <figcaption>This photo contains my two favourite colours: purple and orange. Don't make me choose, please</figcaption>
+                    </figure>
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-disneyland.jpg">
+                        <figcaption>Happiest place on Earth</figcaption>
+                    </figure>
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-sleep.jpg">
+                        <figcaption>My favourite brainstorming location</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section section--photos">
+                <h2 class="heading--secondary">Secret hobby: just designing stuff that looks pretty</h2>
+                <div class="photos">
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-barricade-001.jpg">
+                    </figure>
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-sophomore-001.jpg">
+                    </figure>
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-si-001.jpg">
+                    </figure>
+                    <figure class="photos__item">
+                        <img src="assets/img/about/random-ymt-001.jpg">
+                    </figure>
+                </div>
+            </section>
+
+            <!-- And here's the official part -->
             <section class="section section--list">
                 <div class="section__title">
                     <h2>Work Experience</h2>
@@ -62,5 +118,12 @@
                 </ul>
             </section>
         </main>
+
+        <!-- Footer -->
+        <!-- Funny story: the styles for the top bar work here too -->
+        <footer class="menu">
+            <h1 class="menu__logo"><a href="index.html">Made by <span class="util__name">Thijmen</span></a></h1>
+        </footer>
+
     </body>
 </html>

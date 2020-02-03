@@ -9,8 +9,8 @@
     </head>
     <body>
         <!-- Top bar -->
-        <header class="top top--no-logo">
-            <nav class="top__menu">
+        <header class="menu menu--no-logo">
+            <nav class="menu__menu">
                 <ul>
                     <li><a href="about.html">About me</a></li>
                 </ul>
@@ -36,29 +36,37 @@
                 </header>
                 <article>
                     <a href="work/open-day-ckc.html" class="work work--dark work--colour-1">
-                        <h3>CKC &amp; partners</h3>
-                        <h2>Open Day Program</h2>
+                        <div class="work__title">
+                            <h3>CKC &amp; partners</h3>
+                            <h2>Open Day Program</h2>
+                        </div>
                         <img src="assets/img/projects/ckc-open-day-home-001.png">
                     </a>
                 </article>
                 <article>
                     <a href="work/dal-community.html" class="work work--right work--colour-2">
-                        <h3>CKC & partners</h3>
-                        <h2>Digital Art Lab Community</h2>
+                        <div class="work__title">
+                            <h3>CKC & partners</h3>
+                            <h2>Digital Art Lab Community</h2>
+                        </div>
                         <img src="assets/img/projects/ckc-dal-community-home-001.png">
                     </a>
                 </article>
                 <article>
                     <a href="work/ckc-id.html" class="work work--colour-3 work--dark">
-                        <h3>CKC & partners</h3>
-                        <h2>CKC ID</h2>
+                        <div class="work__title">
+                            <h3>CKC & partners</h3>
+                            <h2>CKC ID</h2>
+                        </div>
                         <img src="assets/img/projects/ckcid-home-001.png">
                     </a>
                 </article>
                 <article>
                     <a href="work/hallmark.html" class="work work--right work--colour-4">
-                        <h3>Hallmark</h3>
-                        <h2>Bespoke Unwrapping</h2>
+                        <div class="work__title">
+                            <h3>Hallmark</h3>
+                            <h2>Bespoke Unwrapping</h2>
+                        </div>
                         <img src="assets/img/projects/hallmark-home-001.png">
                     </a>
                 </article>
@@ -66,8 +74,9 @@
         </main>
 
         <!-- Footer -->
-        <footer>
-
+        <!-- Funny story: the styles for the top bar work here too -->
+        <footer class="menu">
+            <h1 class="menu__logo"><a href="index.html">Made by <span class="util__name">Thijmen</span></a></h1>
         </footer>
     </body>
 </html>
