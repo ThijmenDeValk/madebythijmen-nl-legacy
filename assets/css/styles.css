@@ -278,25 +278,25 @@ a:hover {
  */
 
 .work {
-    height: 15rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2rem;
     background: #111;
     position: relative;
+    overflow: hidden;
 }
 .work h2, .work h3 {
-    margin: 0 100px;
-}
-.work h2 {
-    font-size: 2.441em;
+    margin: 0 2rem;
+    position: relative;
+    z-index: 2;
 }
 .work h3 {
     font-weight: 400;
 }
 .work img {
-    height: 15rem;
+    height: 10rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -324,6 +324,26 @@ a:hover {
 }
 .work--colour-4 {
     background: #562B9B;
+}
+
+@media only screen and (min-width: 601px) {
+    .work {
+        height: 15rem;
+    }
+    .work h2, .work h3 {
+        margin: 0 100px;
+    }
+    .work h2 {
+        font-size: 2.441em;
+    }
+    .work img {
+        height: 15rem;
+    }
+}
+@media only screen and (max-width: 970px) {
+    .work img {
+        opacity: .25;
+    }
 }
 
 /*
