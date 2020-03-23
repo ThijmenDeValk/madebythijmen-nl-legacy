@@ -1,4 +1,4 @@
-/*  Made by Thijmen, v0.1
+/*  Made by Thijmen, v1.0
  *  This stylesheet follows the BEM naming methodology (http://getbem.com)
  *
  *  Base size (1rem): 16px
@@ -391,6 +391,8 @@ a:hover {
     overflow: hidden;
     text-decoration: none;
     display: block;
+    transform: translateX(0);
+    transition: margin 1s ease; 
 }
 .work h2, .work h3 {
     margin: 0 2rem;
@@ -399,12 +401,19 @@ a:hover {
     font-weight: 400;
 }
 .work img {
-    height: 10rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: .25;
+    height: 100%;
 }
+
+.work:hover .work__image, .work:focus .work__image, .work:active .work__image {
+    transform: translateX(0);
+    opacity: .5;
+}
+.work:hover .work__title, .work:focus .work__title, .work:active .work__title {
+    transform: translateX(-.5rem);
+}
+.work.work--right:hover .work__title, .work.work--right:focus .work__title, .work.work--right:active .work__title {
+    transform: translateX(.5rem);
+}    
 
 .work__title {
     position: relative;
@@ -414,6 +423,22 @@ a:hover {
     justify-content: center;
     height: 100%;
     min-width: 50%;
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+.work__image {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    transform: translateX(1rem);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: .25;
 }
 
 .work--dark {
@@ -422,9 +447,9 @@ a:hover {
 .work--right {
     text-align: right;
 }
-.work--right img {
-    left: 0;
-    right: auto;
+.work--right .work__image {
+    justify-content: flex-start;
+    transform: translateX(-1rem);
 }
 
 .work--colour-1 {
@@ -450,33 +475,41 @@ a:hover {
     .work h2 {
         font-size: 2.441em;
     }
-    .work img {
-        height: 15rem;
-        opacity: 1;
-    }
-}
 
-@media only screen and (min-width: 601px) and (max-width: 968px) {
-    .work--colour-1 .work__title {
-        background: linear-gradient(to right, rgba(255, 235, 0, .9) 0%, rgba(255, 235, 0, .7) 75%, rgba(255, 235, 0, .2) 100%)
-    }    
-    .work--colour-2 .work__title {
-        background: linear-gradient(to left, rgba(255, 24, 116, .9) 0%, rgba(255, 24, 116, .6) 75%, rgba(255, 24, 116, .2) 100%)
-    }    
-    .work--colour-3 .work__title {
-        background: linear-gradient(to right, rgba(180, 181, 223, .9) 0%, rgba(180, 181, 223, .6) 75%, rgba(180, 181, 223, .2) 100%)
-    }    
-    .work--colour-4 .work__title {
-        background: linear-gradient(to left, rgba(86, 43, 155, .9) 0%, rgba(86, 43, 155, .6) 75%, rgba(86, 43, 155, .2) 100%)
-    }    
+    .work__image {
+        transform: translateX(2.5rem);
+    }
+    .work--right .work__image {
+        transform: translateX(-2.5rem);
+    }
+    
 }
 @media only screen and (max-width: 968px) {
     .work {
         margin-left: -1rem;
         margin-right: -1rem;
     }
+
     .work__title {
         padding: 0 1rem;
+    }
+}
+@media only screen and (min-width: 940px) {
+    .work__image {
+        opacity: 1 !important;
+    }
+}
+@media only screen and (min-width: 1135px) {
+    .work:hover, .work:focus, .work:active {
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+
+    .work:hover .work__title, .work:focus .work__title, .work:active .work__title {
+        transform: translateX(4rem);
+    }
+    .work.work--right:hover .work__title, .work.work--right:focus .work__title, .work.work--right:active .work__title {
+        transform: translateX(-4rem);
     }
 }
 
