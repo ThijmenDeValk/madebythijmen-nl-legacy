@@ -178,11 +178,14 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: .2rem;
     border: 1px solid rgba(255,255,255,.6);
-    border-radius: 4px;
+    border-radius: 10px;
     color: rgba(255,255,255,.6);
-    padding: .25rem .1rem .25rem .3rem; /* Compensate for letter-spacing on the right */
+    padding: .25rem .3rem .25rem .4rem;
     line-height: 1;
-    margin: 0 .25rem .25rem 0;
+    margin: 0 .5rem .5rem 0;
+}
+.tags li:before {
+    content: "• ";
 }
 
 /*
@@ -253,6 +256,18 @@ a:hover {
 .section--image img {
     display: block;
     width: 100%;
+}
+
+.section--sosumi {
+    opacity: .6;
+}
+.section--sosumi h2 {
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.section--sosumi p {
+    margin: .5rem auto .5rem;
 }
 
 
