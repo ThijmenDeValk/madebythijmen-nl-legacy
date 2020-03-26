@@ -406,8 +406,6 @@ a:hover {
     overflow: hidden;
     text-decoration: none;
     display: block;
-    transform: translateX(0);
-    transition: margin 1s ease; 
 }
 .work h2, .work h3 {
     margin: 0 2rem;
@@ -428,7 +426,7 @@ a:hover {
 }
 .work.work--right:hover .work__title, .work.work--right:focus .work__title, .work.work--right:active .work__title {
     transform: translateX(.5rem);
-}    
+}
 
 .work__title {
     position: relative;
@@ -491,6 +489,13 @@ a:hover {
         font-size: 2.441em;
     }
 
+    .work:hover .work__title, .work:focus .work__title, .work:active .work__title {
+        transform: translateX(-1rem);
+    }
+    .work.work--right:hover .work__title, .work.work--right:focus .work__title, .work.work--right:active .work__title {
+        transform: translateX(1rem);
+    }
+
     .work__image {
         transform: translateX(2.5rem);
     }
@@ -515,16 +520,39 @@ a:hover {
     }
 }
 @media only screen and (min-width: 1135px) {
-    .work:hover, .work:focus, .work:active {
+    .work {
         margin-left: -5rem;
         margin-right: -5rem;
+        padding: 0 5rem;
+    }
+    .work:before, .work:after {
+        content: "";
+        display: block;
+        width: 5rem;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        background: #000;
+        z-index: 9;
+        transition: transform 1s ease;
+    }
+    .work:before {
+        left: 0;
+        transform-origin: left center;
+    }
+    .work:after {
+        right: 0;
+        transform-origin: right center;
+    }
+    .work:hover:before, .work:hover:after, .work:focus:before, .work:focus:after, .work:active:before, .work:active:after {
+        transform: scaleX(0);
     }
 
-    .work:hover .work__title, .work:focus .work__title, .work:active .work__title {
-        transform: translateX(4rem);
+    .work__image {
+        transform: translateX(-2.5rem);
     }
-    .work.work--right:hover .work__title, .work.work--right:focus .work__title, .work.work--right:active .work__title {
-        transform: translateX(-4rem);
+    .work--right .work__image {
+        transform: translateX(2.5rem);
     }
 }
 
