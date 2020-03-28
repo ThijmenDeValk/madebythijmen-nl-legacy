@@ -378,19 +378,26 @@ a:hover {
     
 }
 
+.menu__contact {
+    text-align: right;
+}
 .menu__contact h2 {
     font-size: .8rem;
     text-transform: uppercase;
     font-family: forma-djr-micro, sans-serif;
     font-weight: 500;
     margin: 1rem 1rem .5rem 0;
-    text-align: right;
 }
 .menu__contact p {
     margin: 0;
 }
 .menu__contact a {
-    padding: 0 1rem 0 0;
+    padding: 0 1rem .5rem 0;
+}
+.menu__contact img {
+    width: 1rem;
+    vertical-align: middle;
+    margin-right: .5rem;
 }
 
 /*
