@@ -185,7 +185,7 @@ a:hover {
     margin: 0 .5rem .5rem 0;
 }
 .tags li:before {
-    content: "• ";
+    content: "\2022\20";
 }
 
 /*
