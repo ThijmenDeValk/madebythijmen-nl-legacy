@@ -13,7 +13,10 @@ http {
   server {
     listen      {{ $.PORT }};
     server_name www.madebythijmen.nl;
-    return 301 $scheme://madebythijmen.nl$request_uri;
+
+    location / {
+        return 301 https://example.com/$request_uri;
+    }
   }
   server {
     listen {{ $.PORT }};
