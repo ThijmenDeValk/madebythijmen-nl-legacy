@@ -11,6 +11,11 @@ http {
   types_hash_max_size 2048;
   include mime.types;
   server {
+    listen      {{ $.PORT }};
+    server_name www.madebythijmen.nl;
+    return 301 $scheme://madebythijmen.nl$request_uri;
+  }
+  server {
     listen {{ $.PORT }};
     server_name  _;
     {{ if ne $.NGINX_ROOT "" }}
