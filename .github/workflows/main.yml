@@ -19,6 +19,8 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - run: |
+        git fetch --unshallow
 
     - name: Dokku deploy
       uses: vitalyliber/dokku-github-action@v4.0
