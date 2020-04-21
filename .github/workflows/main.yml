@@ -27,3 +27,4 @@ jobs:
         PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
         HOST: ${{ secrets.DOKKU_HOST }}
         PROJECT: ${{ secrets.DOKKU_APPLICATION }}
+        FORCE_DEPLOY: true
