@@ -26,7 +26,7 @@ http {
       add_header X-Content-Type-Options nosniff always;
       add_header X-XSS-Protection "1; mode=block" always;
       add_header Referrer-Policy "strict-origin" always;
-      add_header Content-Security-Policy "default-src 'self'; style-src 'self' use.typekit.com p.typekit.com; font-src use.typekit.com; frame-src 'self' https://youtube.com https://player.vimeo.com; upgrade-insecure-requests; block-all-mixed-content; report-uri https://madebythijmen.report-uri.com/r/d/csp/enforce" always;
+      add_header Content-Security-Policy "default-src 'self'; style-src 'self' use.typekit.net p.typekit.net; font-src use.typekit.net; frame-src 'self' https://youtube.com https://player.vimeo.com; upgrade-insecure-requests; block-all-mixed-content; report-uri https://madebythijmen.report-uri.com/r/d/csp/enforce" always;
 
       rewrite ^(/.*)\.html(\?.*)?$ $1$2;
       rewrite ^/(.*)/$ /$1;
