@@ -26,7 +26,7 @@ http {
       add_header X-Content-Type-Options nosniff always;
       add_header X-XSS-Protection "1; mode=block" always;
       add_header Referrer-Policy "strict-origin" always;
-      add_header Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline' use.typekit.net p.typekit.net; img-src 'self' p.typekit.net; font-src use.typekit.net data://*; frame-src 'self' https://youtube.com https://www.youtube.com https://youtube-nocookie.com https://www.youtube-nocookie.com https://player.vimeo.com; upgrade-insecure-requests; block-all-mixed-content; report-uri https://madebythijmen.report-uri.com/r/d/csp/enforce" always;
+      add_header Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline' use.typekit.net p.typekit.net; img-src 'self' p.typekit.net; font-src use.typekit.net data; frame-src 'self' https://youtube.com https://www.youtube.com https://youtube-nocookie.com https://www.youtube-nocookie.com https://player.vimeo.com; upgrade-insecure-requests; block-all-mixed-content; report-uri https://madebythijmen.report-uri.com/r/d/csp/enforce" always;
       add_header Report-To "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://madebythijmen.report-uri.com/a/d/g'}],'include_subdomains':true}" always;
       add_header NEL "{'report_to':'default','max_age':31536000,'include_subdomains':true}" always;
 
