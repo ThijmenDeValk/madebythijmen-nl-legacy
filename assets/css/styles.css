@@ -357,14 +357,17 @@ a:hover {
 .menu a {
     text-decoration: none;
     font-weight: 700;
+    font-size: 1rem;
     line-height: 1rem;
     padding: 1rem;
     display: block;
+    transition: color .15s;
 }
 .menu__logo {
-    font-size: 1rem;
-    line-height: 1rem;
     margin: 0;
+}
+.menu__menu {
+    margin-left: auto;
 }
 .menu__menu ul {
     margin: 0;
@@ -373,17 +376,20 @@ a:hover {
     display: flex;
 }
 .menu__menu a {
-    text-transform: uppercase;
-    font-size: .8rem;
-    
+    color: #999;
+}
+.menu__menu a:hover, .menu__menu a:focus, .menu__menu a:active {
+    color: #fff;
 }
 
 .menu__contact {
     text-align: right;
 }
 .menu__contact h2 {
-    font-size: .8rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
+    font-size: .8rem;
+    opacity: .6;
     font-family: forma-djr-micro, sans-serif;
     font-weight: 500;
     margin: 1rem 1rem .5rem 0;
@@ -408,6 +414,11 @@ a:hover {
 .menu__social a {
     padding: .5rem;
     display: block;
+    opacity: .6;
+    transition: opacity .15s;
+}
+.menu__social a:hover, .menu__social a:focus, .menu__social a:active {
+    opacity: 1;
 }
 .menu__social img {
     width: 1rem;
@@ -549,8 +560,8 @@ a:hover {
         content: "";
         display: block;
         width: 5rem;
-        height: 100%;
-        top: 0;
+        top: -1px;
+        bottom: -1px;
         position: absolute;
         background: #000;
         z-index: 9;
