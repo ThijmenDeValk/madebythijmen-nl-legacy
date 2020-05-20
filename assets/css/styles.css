@@ -394,10 +394,23 @@ a:hover {
 .menu__contact a {
     padding: 0 1rem .5rem 0;
 }
-.menu__contact img {
+
+.menu__social {
+    margin: 0 .5rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__social li {
+    margin: 0;
+}
+.menu__social a {
+    padding: .5rem;
+    display: block;
+}
+.menu__social img {
     width: 1rem;
-    vertical-align: middle;
-    margin-right: .5rem;
 }
 
 /*
@@ -476,7 +489,7 @@ a:hover {
     background: #ffeb00;
 }
 .work--colour-2 {
-    background: #ff1874;
+    background: #DD255D;
 }
 .work--colour-3 {
     background: #B4B5DF;
