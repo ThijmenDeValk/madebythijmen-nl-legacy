@@ -131,10 +131,10 @@ a:hover {
     bottom: 0;
     right: -.5em;
 }
-.button:hover {
+.button:hover, a:hover .button {
     color: #fff;
 }
-.button:hover:after {
+.button:hover:after, a:hover .button:after {
     opacity: 1;
     background-position: right 0 center;
     transition-delay: 0s, .2s;
@@ -222,8 +222,9 @@ a:hover {
     margin-top: 0;
 }
 
-.section--work h1 {
-    margin: 0 0 2rem;
+.section--work header h2 {
+    margin: 4rem 0 2rem;
+    color: rgba(255,255,255,.6);
 }
 
 .section--project {
@@ -426,17 +427,21 @@ a:hover {
 .work {
     height: 10rem;
     margin-bottom: 2rem;
-    background: #111;
+    background: #1A1A1A;
     position: relative;
     overflow: hidden;
     text-decoration: none;
     display: block;
 }
-.work h2, .work h3 {
-    margin: 0 2rem;
+.work h2, .work h3, .work h4, .work .button {
+    margin: 0;
 }
 .work h3 {
     font-weight: 400;
+    opacity: .6;
+}
+.work .button {
+    align-self: flex-start;
 }
 .work img {
     height: 100%;
@@ -445,12 +450,6 @@ a:hover {
 .work:hover .work__image, .work:focus .work__image, .work:active .work__image {
     transform: translateX(0);
     opacity: .5;
-}
-.work:hover .work__title, .work:focus .work__title, .work:active .work__title {
-    transform: translateX(-.5rem);
-}
-.work.work--right:hover .work__title, .work.work--right:focus .work__title, .work.work--right:active .work__title {
-    transform: translateX(.5rem);
 }
 
 .work__title {
@@ -485,6 +484,9 @@ a:hover {
 .work--right {
     text-align: right;
 }
+.work--right .button {
+    align-self: flex-end;
+}
 .work--right .work__image {
     justify-content: flex-start;
     transform: translateX(-1rem);
@@ -507,7 +509,7 @@ a:hover {
     .work {
         height: 15rem;
     }
-    .work h2, .work h3 {
+    .work h2, .work h3, .work h4, .work .button {
         margin: 0 100px;
     }
     .work h2 {
@@ -608,7 +610,7 @@ a:hover {
 }
 .photos__item img {
     display: block;
-    border: .5rem #222 solid;
+    border: .5rem #1A1A1A solid;
     margin: 0 .5rem;
     width: calc(100% - 1rem);
 }
