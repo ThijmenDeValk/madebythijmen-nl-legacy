@@ -12,13 +12,20 @@
 html {
   height: 100%;
   --color-foreground-main-rgb: 32, 24, 22;
-  --color-foreground-secondary-transparency: 0.5;
+  --color-foreground-secondary-transparency: 0.6;
   --color-foreground-tertiary-transparency: 0.1;
   --color-foreground-main: rgb(var(--color-foreground-main-rgb));
-  --color-foreground-secondary: rgba(var(--color-foreground-main-rgb), var(--color-foreground-secondary-transparency));
-  --color-foreground-tertiary: rgba(var(--color-foreground-main-rgb), var(--color-foreground-tertiary-transparency));
+  --color-foreground-secondary: rgba(
+    var(--color-foreground-main-rgb),
+    var(--color-foreground-secondary-transparency)
+  );
+  --color-foreground-tertiary: rgba(
+    var(--color-foreground-main-rgb),
+    var(--color-foreground-tertiary-transparency)
+  );
   --color-background-main-rgb: 251, 245, 243;
   --color-background-main: rgb(var(--color-background-main-rgb));
+  --color-accent-rgb: 195, 65, 27;
 }
 @media (prefers-color-scheme: dark) {
   html {
@@ -41,7 +48,7 @@ body {
   box-sizing: border-box;
 }
 ::selection {
-  background: rgba(var(--color-foreground-main-rgb), 0.25);
+  background: rgba(var(--color-accent-rgb), 0.25);
   color: var(--color-foreground-main);
 }
 
@@ -282,7 +289,8 @@ a:hover .button:after {
   padding: 0 1rem;
   max-width: 73rem;
 }
-.section--image img, .section--image__video {
+.section--image img,
+.section--image__video {
   display: block;
   max-width: 968px;
   width: 100%;
@@ -299,7 +307,7 @@ a:hover .button:after {
   right: 0;
   background: rgba(var(--color-project-primary), 0.5);
   z-index: -1;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .section--sosumi {
@@ -587,7 +595,7 @@ a:hover .button:after {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /*
@@ -655,7 +663,6 @@ a:hover .button:after {
   color: var(--color-foreground-main);
 }
 .about-me__text-newline {
-  margin-top: 1rem;
   display: block;
 }
 .about-me__photo {
@@ -664,6 +671,18 @@ a:hover .button:after {
 }
 .about-me__photo img {
   width: 50%;
+}
+
+.about-me__availability {
+  margin-bottom: 2rem;
+}
+.about-me__availability a {
+  background: rgba(var(--color-accent-rgb), 0.25);
+  border: 1px solid var(--color-foreground-tertiary);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 601px) {
