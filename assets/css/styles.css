@@ -164,7 +164,7 @@ a:hover {
   content: "";
   height: 1.5em;
   width: 1em;
-  background: url("../img/button-arrow-right.svg") no-repeat;
+  background: url("../img/button-arrow-right-light.svg") no-repeat;
   background-position: right 0.5em center;
   background-size: 1em auto;
   opacity: var(--color-foreground-secondary-transparency);
@@ -173,6 +173,11 @@ a:hover {
   position: absolute;
   bottom: 0;
   right: -0.5em;
+}
+@media (prefers-color-scheme: dark) {
+  .button:after {
+    background-image: url("../img/button-arrow-right-dark.svg");
+  }
 }
 .button:hover,
 a:hover .button {
@@ -286,7 +291,7 @@ a:hover .button:after {
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 0 1rem;
+  padding: 1rem;
   max-width: 73rem;
 }
 .section--image img,
@@ -301,8 +306,8 @@ a:hover .button:after {
 }
 .section--image__background {
   position: absolute;
-  top: 1.5rem;
-  bottom: 1.5rem;
+  top: 2.5rem;
+  bottom: 2.5rem;
   left: 0;
   right: 0;
   background: rgba(var(--color-project-primary), 0.5);
@@ -495,7 +500,7 @@ a:hover .button:after {
 .work {
   --color-project-primary: var(--color-foreground-main-rgb);
   margin-bottom: 1rem;
-  background-color: rgba(var(--color-project-primary), 0.25);
+  background-color: rgba(var(--color-project-primary), 0.5);
   position: relative;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -504,6 +509,11 @@ a:hover .button:after {
   justify-content: center;
   align-items: stretch;
   border: 1px solid var(--color-foreground-tertiary);
+}
+@media (prefers-color-scheme: dark) {
+  .work {
+    background-color: transparent;
+  }
 }
 
 .work h2 {

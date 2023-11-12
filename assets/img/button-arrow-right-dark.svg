@@ -1,10 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 5.52">
   <defs>
     <style>
-      .cls-1{fill:rgb(32, 24, 22);}
-      @media (prefers-color-scheme: dark) {
       .cls-1{fill:rgb(251, 245, 243);}
-      }</style>
+    </style>
   </defs>
   <title>button-arrow-right</title>
   <g id="Laag_2" data-name="Laag 2">
