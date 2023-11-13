@@ -7,27 +7,27 @@
 
 <url>
   <loc>https://madebythijmen.nl/</loc>
-  <lastmod>2022-07-01T17:13:00+00:00</lastmod>
+  <lastmod>2023-11-13T22:30:00+01:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://madebythijmen.nl/about</loc>
-  <lastmod>2022-07-01T17:13:00+00:00</lastmod>
+  <lastmod>2023-11-13T22:30:00+01:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://madebythijmen.nl/work/whats-for-dinner</loc>
+  <lastmod>2023-11-13T22:30:00+01:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
   <loc>https://madebythijmen.nl/work/open-day-ckc</loc>
-  <lastmod>2020-09-08T18:21:13+00:00</lastmod>
+  <lastmod>2023-11-13T22:30:00+01:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://madebythijmen.nl/work/dal-community</loc>
-  <lastmod>2020-09-08T18:21:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://madebythijmen.nl/work/ckc-id</loc>
-  <lastmod>2020-09-08T18:21:13+00:00</lastmod>
+  <loc>https://madebythijmen.nl/work/central-innovation-district</loc>
+  <lastmod>2023-11-13T22:30:00+01:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>

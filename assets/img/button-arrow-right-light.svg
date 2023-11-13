@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 5.52">
+  <defs>
+    <style>
+      .cls-1{fill:rgb(32, 24, 22);}
+    </style>
+  </defs>
+  <title>button-arrow-right</title>
+  <g id="Laag_2" data-name="Laag 2">
+    <g id="Laag_1-2" data-name="Laag 1">
+      <path class="cls-1"
+        d="M16,2.64,13.36,0a.2.2,0,0,0-.23,0l-.58.58a.2.2,0,0,0,0,.23L13.9,2.19H0V3.33H13.9L12.55,4.68a.18.18,0,0,0,0,.22l.58.58a.17.17,0,0,0,.23,0L16,2.88a.2.2,0,0,0,0-.24Z" />
+    </g>
+  </g>
+</svg>
