@@ -312,7 +312,16 @@ a:hover .button:after {
   right: 0;
   background: rgba(var(--color-project-primary), 0.5);
   z-index: -1;
-  border-radius: 0.5rem;
+}
+.section--image__background--extra-spacing {
+  top: 4rem;
+  bottom: 4rem;
+}
+
+@media only screen and (min-width: 73rem) {
+  .section--image__background {
+    border-radius: 0.5rem;
+  }
 }
 
 .section--sosumi {
