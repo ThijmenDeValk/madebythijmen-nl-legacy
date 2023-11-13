@@ -517,11 +517,11 @@ a:hover .button:after {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  border: 1px solid var(--color-foreground-tertiary);
+  border: 1px solid rgb(var(--color-project-primary));
 }
 @media (prefers-color-scheme: dark) {
   .work {
-    background-color: transparent;
+    background-color: rgba(var(--color-project-primary), 0.2);
   }
 }
 
@@ -538,7 +538,7 @@ a:hover .button:after {
   width: 100%;
   max-width: 1000px;
   padding: 1rem;
-  border-top: 1px solid var(--color-foreground-tertiary);
+  border-top: 1px solid rgb(var(--color-project-primary));
 }
 
 .work__meta {
@@ -695,9 +695,9 @@ a:hover .button:after {
 .about-me__availability {
   margin-bottom: 2rem;
 }
-.about-me__availability a {
+.about-me__availability a, .about-me__availability span {
   background: rgba(var(--color-accent-rgb), 0.25);
-  border: 1px solid var(--color-foreground-tertiary);
+  border: 1px solid rgb(var(--color-accent-rgb));
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
   display: inline-block;
