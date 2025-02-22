@@ -11,7 +11,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'report-sample' 'self'; style-src 'report-sample' 'self' https://p.typekit.net https://use.typekit.net; object-src 'none'; base-uri 'self'; connect-src 'self'; font-src 'self' https://use.typekit.net; frame-src 'self' https://www.youtube-nocookie.com; img-src 'self' https://i.ytimg.com; manifest-src 'self'; media-src 'self'; report-uri https://madebythijmen.report-uri.com/r/d/csp/enforce; worker-src 'none';"
+          "value": "default-src 'self'; script-src 'report-sample' 'self' https://static.cloudflareinsights.com; style-src 'report-sample' 'self' https://p.typekit.net https://use.typekit.net; object-src 'none'; base-uri 'self'; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://use.typekit.net; frame-src 'self' https://www.youtube-nocookie.com; img-src 'self' https://i.ytimg.com; manifest-src 'self'; media-src 'self'; report-uri https://madebythijmen.report-uri.com/r/d/csp/enforce; worker-src 'none';"
         },
         {
           "key": "Referrer-Policy",
